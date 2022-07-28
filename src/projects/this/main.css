@@ -1,0 +1,14 @@
+#main-container-proj{
+    background-color: white;
+    margin: 5px;
+    max-width: 80% !important;
+    border-radius: 10px;
+    border: 2px solid rgb(7, 7, 7);
+    color: black;
+}
+
+.emphasis-proj{
+    color: rgb(37, 142, 181);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}

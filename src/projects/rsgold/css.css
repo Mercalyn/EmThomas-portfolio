@@ -1,0 +1,146 @@
+p.rs,p.rs-first-tab{
+    text-indent: 30px;
+    font-size: 17px;
+    font-family: "Times New Roman";
+    word-break: normal;
+    line-height: 21px;
+}
+p.rs-first-tab{
+    margin: 0px -65px;
+    padding: 9px 0px;
+}
+p.rs{
+    padding: 2px 0px;
+}
+h5.rs{
+    background-color: black;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 5px;
+    margin-left: 0px;
+}
+
+#page-container-rs{
+    background-color: black;
+    width: 880px;
+    font-size: medium;
+    font-weight: 500;
+    font-family: "Book Antiqua","Palatino","Palatino Linotype","Palatino LT STD",Georgia,serif !important;
+    margin: 0px;
+    padding: 0px;
+}
+#slogan-text-rs{
+    font-size: medium;
+    font-weight: 600;
+    font-family: "Book Antiqua","Palatino","Palatino Linotype","Palatino LT STD",Georgia,serif !important;
+    color: white;
+}
+#banner-rs{
+    color:white;
+    height: 45px;
+}
+#main-content-rs{
+    background-color: #303030;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    border-top: 2px solid #ffea00;
+    border-bottom: 2px solid #ffea00;
+}
+#rs-navbar{
+    height: 43px;
+}
+
+.n-f{
+    flex-grow: 0 !important;
+}
+.rs-button{
+    cursor: pointer;
+    color: white;
+    height: 40px !important;
+    font-family: Georgia,serif;
+    font-size: 19px !important;
+    padding: 10px 60px 10px 60px !important;
+}
+.rs-button:hover{
+    background-color: rgb(255, 234, 0);
+    color: black;
+}
+.rs-active-button{
+    animation: down-button 500ms ease 1 forwards;
+    background-color: rgb(255, 234, 0);
+}
+.rs-inactive-button{
+    animation: up-button 500ms ease 1 forwards;
+}
+.rs-active-h2{
+    color: black;
+}
+.rs-opacity{
+    animation: opacity 7.5s ease infinite;
+}
+.rs-faq{
+    background-color: black;
+}
+.accordion-button{
+    background-color: black;
+    color: white;
+    width: 100%;
+    border: 2px solid #c90;
+    border-radius: 4px;
+    font-family:'Times New Roman', Times, serif !important;
+    margin: 0px;
+}
+
+@keyframes down-button{
+    0%{
+        transform: translate(0px,0px);
+    }
+    100%{
+        transform: translate(0px,10px);
+    }
+}
+@keyframes up-button{
+    0%{
+        transform: translate(0px,10px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    6%{
+        opacity: 0;
+    }
+    18%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    82%{
+        opacity: 1;
+    }
+    94%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+
+a:link{color:#ffea00}
+
+a:visited{color:#c90}
+
+.singletab,.sidetab{position:relative;padding:10px 60px 0 60px;display:inline-block;white-space:normal;height:33px;color:white;text-transform:uppercase;font-size:19px;vertical-align:top;font-family:Georgia,serif;z-index:4}
+.sidetab{padding:0 56px}
+.rscontent{padding:25px}
+p.arkan{color:white;text-indent:30px;padding:10px 10px;font-size:19px;margin:0;font-family:"Times New Roman";word-break:normal}
+h3.harka{color:white;border:2px solid #c90;border-radius:4px;background-color:black;padding:5px 0 5px 30px;cursor:pointer;margin:0;font-size:19px;font-family:"Times New Roman"}
