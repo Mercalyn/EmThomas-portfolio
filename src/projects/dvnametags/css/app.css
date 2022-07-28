@@ -1,0 +1,22 @@
+/* the * statement defines serif font for everything */
+*{
+    font-family: "Garamond", "Georgia", Serif;
+}
+
+
+/* specifically targetting things to become a cleaner, sans serif font, comment out if you want whole site to be serif, you monster */
+h4, button, .btn, .status-b-col-text, p, .input-group-text, .row, .form-control{
+    font-family: "Montserrat", "Helvetica", Sans-Serif;
+}
+
+
+#main-content-container-dv{
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 10px;
+    border: 2px solid rgb(7, 7, 7);
+    color: black;
+}

@@ -1,0 +1,116 @@
+a{
+    color: white !important;
+}
+a:hover{
+    text-decoration: none !important;
+}
+
+/* this is needed just for the Empire Signshop, and advisory font */
+#banner-h3-dv{
+    font-family: "Garamond", "Georgia", Serif !important;
+    font-size: 50px !important;
+}
+
+
+/* banner positioning */
+#title-banner-dv{
+    position: relative;
+    background-image: url("../img/banner.jpg");
+    height: 200px;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    margin: 0px auto;
+    justify-content: center;
+}
+#banner-h3-dv,#under-banner-dv{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    position: absolute;
+    font-weight: 500;
+    margin-top: 0px;
+}
+#banner-h3-dv{
+    font-size: 30px;
+    top: 0px;
+}
+#under-banner-dv{
+    font-family: "Garamond", "Georgia", Serif !important;
+    font-size: 20px;
+    top: 60px !important;
+}
+/* by default positioning and sizing happens at the smallest screen, and is conditionally increased with larger screens here */
+@media (min-width: 768px) {
+    #banner-h3-dv{
+        font-size: 45px;
+    }
+    #under-banner-dv{
+        font-size: 25px;
+        top: 45px;
+    }
+}
+#status-search-bar{
+    width: 300px;
+    height: 100%;
+}
+#example-img-id{
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+#status-search-bar-inner{
+    height: 100%;
+}
+
+
+/* classes */
+.nav-h4-bar-bg{
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.btn{
+    font-size: 12px !important;
+}
+.nav-h4-bar{
+    font-size: 15px;
+    padding-top: 5px;
+}
+.input-group-text{
+    padding: 5px 30px 5px 20px;
+}
+.form-check-input{
+    margin: 0px;
+}
+.dropdown-toggle{
+    width: 100%;
+}
+.modal-body{
+    text-align:center;
+}
+.dropdown-item{
+    color: black !important;
+}
+.modal-dialog{
+    max-width: 100% !important;
+}
+.pinmag-row{
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+.red-text{
+    color: red;
+}
+@media (min-width: 768px) {
+    .nav-h4-bar{
+        font-size: 18px;
+        margin-top: 4px;
+    }
+    .modal-dialog{
+        max-width: 768px !important;
+    }
+    .btn{
+        font-size: 18px !important;
+    }
+}
