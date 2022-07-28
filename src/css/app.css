@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+    --red-color: rgb(205, 89, 89);
+    --blue-color: rgb(110, 196, 229);
+    --grey-color: #777;
+    --darkgrey-color: #222;
+    --green-color: rgb(110, 229, 110);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body, #root{
+    background-color: #0C5386;
+    color: white;
+}
+h2{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 35px !important;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: var(--red-color);
+}
+h3{
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 30px !important;
+    color: var(--blue-color);
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-indent: 24px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+#main-content > div:nth-of-type(odd){
+    margin-left: 0px;
+    left: 0px;
+}
+#main-content > div{
+    margin-bottom: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 25px;
+    background-color: rgba(10, 10, 10, 0.7);
+}
+#main-content{
+    max-width: 2200px;
+}
+#project-panel{
+    max-width: 100% !important;
+}
+@media (min-width: 576px){
+    .container{
+        max-width: 1200px !important;
+    }
+}
+
+.rounded-image{
+    border-radius: 5px;
+    border: 2px solid rgba(5,5,5,.5);
+}
+.fa-sm{
+    font-size: 30px;
+    margin-top: -10px;
+}
+.fa-lg{
+    font-size: 30px;
+    margin-top: -5px;
+    margin-right: 12px;
+    margin-left: 5px;
+    color: var(--red-color);
+}
+.grey-text{
+    color: var(--grey-color);
+    margin-top: -15px;
+}
+.green-text{
+    color: var(--green-color);
+}
+.active{
+    color: var(--darkgrey-color) !important;
+}
+p.red-text{
+    color: var(--red-color);
+}
+h4.grey-text{
+    position: absolute;
+    bottom: 0px;
+    font-size: 15px;
+    text-shadow: 1px 1px black;
+}
+.link-col{
+    border-radius: 5px;
+    padding: 10px;
+}
+.link-col:hover{
+    background-color: rgb(43, 43, 43);
+}
+h3.tech-skills{
+    margin-top: 20px;
+}
+.btn{
+    border-radius: 5px !important;
+}

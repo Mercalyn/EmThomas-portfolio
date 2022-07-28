@@ -1,0 +1,274 @@
+#spaceship-svg,#earth-png,#land-png,#landb-png,#upperclouds-png,#lowerclouds-png{
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+#spaceship-svg{
+    max-width: 30vw;
+    top: 0vh !important;
+    left: 0vw !important;
+}
+#earth-png{
+    width: 120vw;
+    top: 0vh !important;
+    left: 0vw !important;
+}
+#land-png,#landb-png{
+    width: 100vw;
+    top: 40vh !important;
+    left: 40vw !important;
+}
+#upperclouds-png,#lowerclouds-png{
+    width: 100vw;
+    top: 40vh !important;
+    left: 40vw !important;
+}
+
+
+:root{
+    --speed-rotation: 10s;
+    --speed-land: 35s;
+    --speed-upper-cloud: 18s;
+    --speed-lower-cloud: 25s;
+}
+
+
+#land-png,#landb-png{
+    animation: land var(--speed-land) linear infinite;
+}
+#landb-png{
+    animation-delay: 10s;
+    opacity: 0;
+}
+#lowerclouds-png{
+    animation-delay: 4s;
+    opacity: 0;
+}
+#upperclouds-png{
+    animation: land var(--speed-upper-cloud) linear infinite;
+}
+#lowerclouds-png{
+    animation: land var(--speed-lower-cloud) linear infinite;
+}
+@keyframes land{
+    0%{
+        transform: translate(0px,0px);
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(-120vw,-120vh);
+        opacity: 0;
+    }
+}
+
+
+#LightF,#LightG{
+    animation: light-flash 1.7s ease infinite;
+}
+#LightB,#LightC{
+    animation: light-flash 1.7s ease infinite, solar var(--speed-rotation) ease-in-out infinite;
+}
+#LightD,#LightE{
+    animation: light-flash-delay 1.7s ease infinite, solar var(--speed-rotation) ease-in-out infinite;
+}
+
+#LightF{
+    animation-delay: 200ms;
+}
+#LightG{
+    animation-delay: 100ms;
+}
+
+@keyframes light-flash{
+    0%{
+        opacity: 0;
+    }
+    45%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    55%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes light-flash-delay{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    55%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#LightA{
+    animation: light-flash-more 1.5s ease infinite;
+}
+
+@keyframes light-flash-more{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    55%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+#SolarA,#SolarB,#SolarC,#SolarD,#SolarBB,#SolarDD{
+    animation: solar var(--speed-rotation) ease-in-out infinite;
+}
+#SolarA,#SolarC,#LightB{
+    transform-origin: 58% 74%;
+}
+#SolarB,#LightC,#SolarD{
+    transform-origin: 54% 70%;
+}
+#SolarBB,#SolarDD,#LightD,#LightE{
+    transform-origin: 26% 42%;
+}
+
+@keyframes solar{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(7deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+#PodA1{
+    animation: pod-a var(--speed-rotation) ease infinite;
+}
+@keyframes pod-a{
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(15px,-5px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+#PodB1{
+    animation: pod-b var(--speed-rotation) ease infinite;
+}
+@keyframes pod-b{
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(10px,10px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+#PodC1{
+    animation: pod-c var(--speed-rotation) ease infinite;
+}
+@keyframes pod-c{
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(0px,-18px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+#PodD1{
+    animation: pod-d var(--speed-rotation) ease infinite;
+}
+@keyframes pod-d{
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(-4px,-10px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+#PodE1{
+    animation: pod-e var(--speed-rotation) ease infinite;
+}
+@keyframes pod-e{
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(-9px,10px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+#PodF1{
+    animation: pod-f var(--speed-rotation) ease infinite;
+}
+@keyframes pod-f{
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(-20px,0px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
