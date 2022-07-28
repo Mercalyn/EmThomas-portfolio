@@ -1,0 +1,4 @@
+tile is 2k wide 1.8k high
+UpperClouds
+LowerClouds
+Land

@@ -1,0 +1,8 @@
+LightA - G
+PodA1 - F1
+SolarA - SolarD
+SolarBB, SolarDD
+FuelA - FuelE
+FuelAA - FuelEE
+
+solar a, b, bb are above the base
