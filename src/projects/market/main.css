@@ -1,0 +1,31 @@
+#main-container-mkt{
+    background-color: white;
+    margin: 5px;
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 10px;
+    border: 2px solid rgb(7, 7, 7);
+    color: black;
+}
+h4.mkt{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+h4.mktsm{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+h4.mktlg{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 26px;
+    margin-bottom: 0px;
+}
+button.mkt{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px !important;
+}
+#mkt-chart{
+    max-height: 800px;
+}
