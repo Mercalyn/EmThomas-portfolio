@@ -5,12 +5,16 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { Image, Row, Col, Container, Spinner } from 'react-bootstrap';
 import '../css/app.css';
-import ProfilePic from '../img/1000xxprofile.jpg';
+import ProfilePic from '../img/ausprofile.jpg';
 
 
 function Intro() {
     return (
         <Container>
+            <Row className="align-items-center">
+                <FontAwesomeIcon size="lg" icon={faAddressCard} />
+                <h2>About Me</h2>
+            </Row>
             <Row>
                 <Col xs={12} xl={4} id="profile-pic">
                     <Row className="align-items-center h-100">
@@ -18,29 +22,32 @@ function Intro() {
                     </Row>
                 </Col>
                 <Col xs={12} xl={8}>
-                    <Row className="align-items-center">
-                        <FontAwesomeIcon size="lg" icon={faAddressCard} />
-                        <h2>About Me &nbsp;&#10097;&#10097;&nbsp;</h2>
-                    </Row>
+                    
                     <p>
-                        Hello! I'm Emily Thomas or 'Em' for short.
+                        Hello! I'm Emily Thomas but everyone I know calls me Em! 
                     </p>
                     <p className="grey-text ml-3">
                         (and I like to do lines of code at night)
                     </p>
                     <p>
-                        I'm a Software Developer and I like exploring data and creating unique websites. 
-                        I started programming about 14 years ago when I took my first web design course in High 
-                        School. I've explored many topics since then, delving into web design, investigating 
-                        how pages become responsive, quick, and better-looking (especially on mobile devices!). 
-                        More recently I've been exploring data structures like machine learning, and creating 
-                        behind-the-scenes utilities that are lightning fast, have a self-explained interface, 
-                        and increase productivity in an organization. 
+                        I'm a Technologist, coder, analyst, and I love playing with technology and exploring how data and systems work together. This has involved everything from the hardware level, such as setting up headless crypto miners and wiring microcontrollers, to upper levels such as charting data for analysis.
+                    </p>
+                    <p className="mt-5">
+                        It all started a long time ago, in a galaxy very, very close... 
                     </p>
                     <p>
-                        In short, I'm a full stack developer, and 
-                        I'm able to fill many tech-oriented roles. I love learning new things 
-                        and tackling challenges.
+                        My father would always let me take apart broken electronics to satisfy my curiosity. In school I would often code choose-your-own text adventure games using the built-in Windows BATCH. In the Army I learned basic electronics and signal-flow in the telecom field. After the Army I learned a good deal of front-end stack, Javascript, jQuery, leading on to React when it became popular. I worked as a freelance front-end website developer in between other jobs.
+                    </p>
+                    
+                </Col>
+            </Row>
+            <Row className="mt-4">
+                <Col>
+                    <p>
+                        Since then I've worked odd jobs at Deer Valley Ski Resort where I wrote them a lightning-fast internal utility for their nametag system(demo below), and various construction and agriculture jobs where among other tasks, I would repair or install electrical devices(cameras, ethernet cable, dashboard switches). I've been learning machine learning and neuro-evolution, and am creating my own Node.js library from scratch just to prove I understand the base concepts.
+                    </p>
+                    <p className="mt-5">
+                        And as you can imagine, I am the family's IT gal. They call me the computer whisperer.
                     </p>
                 </Col>
             </Row>

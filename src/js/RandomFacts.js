@@ -6,8 +6,11 @@ import {
     faGamepad,
     faFilm
 } from '@fortawesome/free-solid-svg-icons';
-import { Col, Row, Container } from 'react-bootstrap';
+import { Image, Col, Row, Container } from 'react-bootstrap';
 import '../css/app.css';
+import SkiPic from '../img/ski.jpg';
+import ScubaPic from '../img/scuba.jpg';
+import FarmPic from '../img/farm.jpg';
 
 function Contact() {
     const factsArray = [{
@@ -25,27 +28,45 @@ function Contact() {
         <Container>
             <Row className="align-items-center">
                 <FontAwesomeIcon size="lg" icon={faShuffle} />
-                <h2>Other Random Facts &nbsp;&#10097;&#10097;&nbsp;</h2>
+                <h2>Random Facts</h2>
             </Row>
             <Row>
                 <p className="grey-text">
                     (since you are still reading)
                 </p>
             </Row>
-            {
-                factsArray.map((item, index) => 
-                    <Row className="align-items-center" key={index}>
-                        <Col xs={1}>
-                            <Row className="justify-content-end">
-                                <FontAwesomeIcon size="sm" icon={item.icon} />
-                            </Row>
-                        </Col>
-                        <Col xs={11}>
-                            <p>{item.text}</p>
-                        </Col>
+            <Row className="align-items-center mt-n5 p-4">
+                <Col xs={12} lg={9}>
+                    <p>Skiing is my all-time activity that I live for, and consider myself more of a winter person than a summer person. There is something magical about braving a cold, windy mountain while blasting ice crystals in your face at high speeds. Also, hot cocoa.</p>
+                    <p>It's a challenging sport that always has me on edge(pun intended)!</p>
+                </Col>
+                <Col xs={12} lg={3}>
+                    <Row className="justify-content-end">
+                        <Image fluid src={SkiPic} className="rounded-image w-100" />
                     </Row>
-                )
-            }
+                </Col>
+            </Row>
+            <Row className="align-items-center mt-n5 p-4">
+                <Col xs={12} lg={3}>
+                    <Row className="justify-content-end">
+                        <Image fluid src={ScubaPic} className="rounded-image w-100" />
+                    </Row>
+                </Col>
+                <Col xs={12} lg={9}>
+                    <p>I'm a freshly certified diver who loves to just glide around with the fishies.</p>
+                    <p>Don't ask me to navigate, though, you might end up in a different ocean than you started! </p>
+                </Col>
+            </Row>
+            <Row className="align-items-center mb-4 mt-n5 p-4">
+                <Col xs={12} lg={9}>
+                    <p>Agricultural research is something I plan on moving towards eventually. The idea is to marry machine learning optimization methods to help solve some of the problems facing modern farmers, such as technological accessibility, modular and open-sourced agricultural software, and independence from expensive fertilizers.</p>
+                </Col>
+                <Col xs={12} lg={3}>
+                    <Row className="justify-content-end">
+                        <Image fluid src={FarmPic} className="rounded-image w-100" />
+                    </Row>
+                </Col>
+            </Row>
         </Container>
     );
 }

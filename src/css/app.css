@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+@font-face {
+    font-family: "Engebrechtre";
+    src: url("../fonts/engebrechtre.ex-regular.otf");
+}
+
 :root{
     --red-color: rgb(205, 89, 89);
     --blue-color: rgb(110, 196, 229);
@@ -17,23 +22,24 @@ html, body, #root{
     color: white;
 }
 h2{
-    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Engebrechtre', cursive;
     font-size: 35px !important;
     margin-bottom: 20px;
     margin-top: 10px;
+    margin-left: 10px;
     color: var(--red-color);
 }
 h3{
     font-family: 'Open Sans', sans-serif !important;
-    font-size: 30px !important;
+    font-size: 24px !important;
     color: var(--blue-color);
 }
 p{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    text-indent: 24px;
-    letter-spacing: 1px;
-    line-height: 28px;
+    text-indent: 16px;
+    letter-spacing: .5px;
+    line-height: 30px;
 }
 
 #main-content > div:nth-of-type(odd){
@@ -57,11 +63,17 @@ p{
     .container{
         max-width: 1200px !important;
     }
+    .mtn-2{
+        margin-top: -60px;
+    }
 }
 
 .rounded-image{
     border-radius: 5px;
     border: 2px solid rgba(5,5,5,.5);
+}
+.mtn-2{
+    margin-top: -5px;
 }
 .fa-sm{
     font-size: 30px;

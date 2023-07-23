@@ -16,13 +16,13 @@ function Contact() {
         <Container>
             <Row className="align-items-center">
                 <FontAwesomeIcon size="lg" icon={faBriefcase} />
-                <h2>Current Employer: &nbsp;&#10097;&#10097;&nbsp;</h2>
+                <h2>Currently...:</h2>
             </Row>
             <Row>
-                <h3>Looking for a good Employer!</h3>
+                <h3>Planning on Uni and self-learning machine learning</h3>
             </Row>
             <Row>
-                <p>Please contact me to see if I could be the right match for your needs!</p>
+                <p>Not currently available for employment as I'm in a learning kind of mode right now. Thanks for stopping by! I'm always down to collab!</p>
             </Row>
         </Container>
     );

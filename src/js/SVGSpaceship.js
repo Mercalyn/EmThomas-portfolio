@@ -2,10 +2,10 @@ import React, { useRef } from 'react';
 import { Image, Col, Row, Container } from 'react-bootstrap';
 import '../css/svgspaceship.css';
 import Spaceship from '../img/SpaceshipReactSVG.js';
-import EarthCorner from '../img/SkyCornerMin.png';
-import EarthLand from '../img/LandA.png';
-import UpperClouds from '../img/UpperClouds.png';
-import LowerClouds from '../img/LowerClouds.png';
+import EarthCorner from '../img/SkyCornerMinC.png';
+import EarthLand from '../img/LandAMin.png';
+import UpperClouds from '../img/UpperCloudsMin.png';
+import LowerClouds from '../img/LowerCloudsMin.png';
 
 /* Holy shit, do you know how I finally got React, SVG and keep IDs to work?? I did the command line interface 
 and did disable svgo, like so:

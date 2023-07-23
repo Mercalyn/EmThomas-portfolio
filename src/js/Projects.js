@@ -70,7 +70,7 @@ function Projects() {
         <Container id="project-panel">
             <Row className="align-items-center">
                 <FontAwesomeIcon size="lg" icon={faDiagramProject} />
-                <h2>Projects &nbsp;&#10097;&#10097;&nbsp;</h2>
+                <h2>Projects</h2>
                 <p className="mt-2">{description}</p>
             </Row>
             <Row>

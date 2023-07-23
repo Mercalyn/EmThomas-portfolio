@@ -9,13 +9,13 @@
     left: 0vw !important;
 }
 #earth-png{
-    width: 120vw;
+    width: 180vw;
     top: 0vh !important;
     left: 0vw !important;
 }
 #land-png,#landb-png{
-    width: 100vw;
-    top: 40vh !important;
+    width: 120vw;
+    top: 20vh !important;
     left: 40vw !important;
 }
 #upperclouds-png,#lowerclouds-png{
@@ -27,9 +27,9 @@
 
 :root{
     --speed-rotation: 10s;
-    --speed-land: 35s;
+    --speed-land: 55s;
     --speed-upper-cloud: 18s;
-    --speed-lower-cloud: 25s;
+    --speed-lower-cloud: 35s;
 }
 
 
@@ -42,7 +42,7 @@
 }
 #lowerclouds-png{
     animation-delay: 4s;
-    opacity: 0;
+    opacity: 1;
 }
 #upperclouds-png{
     animation: land var(--speed-upper-cloud) linear infinite;

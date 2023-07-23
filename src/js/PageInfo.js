@@ -15,7 +15,7 @@ function PageInfo() {
     return (
         <Container className="w-100 m-0 p-0 justify-items-end">
             <Row className="w-100 m-0 p-0">
-                <h4 className="grey-text">Site made by Emily Soren Thomas for the purposes of having a portfolio site. I've obtained permission to use everything included on the site(mainly the demos!)</h4>
+                <h4 className="grey-text">Site made by Emily Soren Thomas with love from scratch. I've obtained permission to use all the demos. All images taken by or for me. Spaceship and earth graphics by me. Thanks for stopping by :D</h4>
             </Row>
         </Container>
     );

@@ -23,29 +23,26 @@ function Contact() {
         text: "Some companies still rely on jQuery heavily, and those who learned jQuery back in the day will never forget how to use it.",
     },{
         title: "Node.js",
-        text: "I know common libraries such as NPM, Express, Axios, Socket.io, and Crypto(for hashing). I spend the majority of my time now in Node, analyzing market trends, or writing wrappers for CRUD utilities(create, read, update, and delete).",
+        text: "I know common libraries such as NPM, Express, Axios, Socket.io, and Crypto(for hashing). I spend the majority of my time now in Node, analyzing market trends, or writing wrappers for CRUD utilities(create, read, update, and delete) for convenience to the coder.",
     },{
         title: "Database",
-        text: "SQLite3 is a favorite for light db requirements, I have also used MySQL, and Google Firestore in the past. Currently learning GraphQL.",
+        text: "SQLite3 is my favourite go-to for light db requirements, I have also used MySQL, and Google Firestore in the past. The extent of my SQL knowledge extends through to table joining, as any data operation past this will most likely benefit from using GPU processing.",
     },{
         title: "Machine Learning",
-        text: "Played around a lot with Supervised Machine Learning in tensorflow.js using 3 and 4-dimensional tensors. I plan on creating my own neuro-evolution library for node in the future.",
+        text: "Played around a lot with Supervised Machine Learning in tensorflow.js using n-dimensional tensors. I'm creating my own neuro-evolution library in Node.js that will use a slightly more dynamic neural network allowing for multiple squash functions for each different neuron, as well as a residual system that 'passes through' data on deeper layers when it is just starting out.",
     },{
-        title: "GPU Processing in Javascript",
-        text: "I can create custom GPU kernels using GPU.js, allowing great data processing speed ups by running things in parallel.",
+        title: "GPU Processing in Node.js",
+        text: "I plan data-heavy projects from the start using GPGPU(general purpose computing with graphics processing unit) and texture pipelining. This a speedy parallel-thread methodology instead of the slower, recursive loop methodology that only processes things one at a time. When you do data analysis, you want any kind of advantages there are for a reasonable cost.",
     },{
         title: "Graphing Insights",
-        text: "I love graphing data to see what kind of insights can be learned.",
-    },{
-        title: "Fonts",
-        text: "I have used Google Fonts and Font Awesome, which have been reliable fonts and icons.",
+        text: "Plotting and graphing data to create visual outputs is the best way to develop keen insights and correlations that any business might like to see. KPIs(Key Performance Indicators) for example must be derived from some form of data, and my belief is that while you generate reports you may as well generate any kind of insight that leadership likes to look at.",
     }];
 
     return (
         <Container>
             <Row className="align-items-center">
                 <FontAwesomeIcon size="lg" icon={faListCheck} />
-                <h2>Tech Skills &nbsp;&#10097;&#10097;&nbsp;</h2>
+                <h2>Tech Skills</h2>
             </Row>
             <Row className="d-flex justify-content-around">
                 {
