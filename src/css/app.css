@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @font-face {
     font-family: "Engebrechtre";
@@ -12,6 +13,8 @@
     --grey-color: #777;
     --darkgrey-color: #222;
     --green-color: rgb(110, 229, 110);
+    --plate-dot-pixels: 10px;
+    --plate-dot-size: 4px;
 }
 * {
     margin: 0px;
@@ -21,11 +24,23 @@ html, body, #root{
     background-color: #0C5386;
     color: white;
 }
+
+button, a{
+    background-color: var(--red-color) !important;
+    color: white !important;
+}
+button:hover, a:hover{
+    color: black !important;
+    background-color: white !important;
+}
+button.active, a.active{
+    color: black !important;
+    background-color: white !important;
+}
 h2{
-    font-family: 'Engebrechtre', cursive;
-    font-size: 35px !important;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    font-family: "Ubuntu Mono", monospace !important;
+    font-weight: bold;
+    font-size: 40px !important;
     margin-left: 10px;
     color: var(--red-color);
 }
@@ -41,6 +56,10 @@ p{
     letter-spacing: .5px;
     line-height: 30px;
 }
+li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
 
 #main-content > div:nth-of-type(odd){
     margin-left: 0px;
@@ -48,16 +67,10 @@ p{
 }
 #main-content > div{
     margin-bottom: 100px;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px 25px;
-    background-color: rgba(10, 10, 10, 0.7);
 }
+
 #main-content{
     max-width: 2200px;
-}
-#project-panel{
-    max-width: 100% !important;
 }
 @media (min-width: 576px){
     .container{
@@ -68,9 +81,26 @@ p{
     }
 }
 
+.button-border{
+    border: 2px solid black !important;
+}
+.shaded-area{
+    background-color: rgba(0, 0, 0, 0.55);
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px 0;
+}
+.shaded-title{
+    background-color: rgba(0, 0, 0, .9);
+    border: 4px solid var(--red-color);
+    border-radius: 8px;
+    margin: 0px;
+    padding: 0px;
+}
 .rounded-image{
     border-radius: 5px;
-    border: 2px solid rgba(5,5,5,.5);
+    border: 2px solid rgba(5,5,5,.8);
 }
 .mtn-2{
     margin-top: -5px;
@@ -93,9 +123,6 @@ p{
 .green-text{
     color: var(--green-color);
 }
-.active{
-    color: var(--darkgrey-color) !important;
-}
 p.red-text{
     color: var(--red-color);
 }
@@ -117,4 +144,44 @@ h3.tech-skills{
 }
 .btn{
     border-radius: 5px !important;
+}
+
+.float-up-down-a{
+  animation: float-up-down-a 12s ease-in-out infinite;
+}
+.float-up-down-b{
+  animation: float-up-down-b 7s ease-in-out infinite;
+}
+
+@keyframes float-up-down-a {
+    0% {
+        transform: translate(0px, 0) rotate(-12deg);
+    }
+    50% {
+        transform: translate(0, 20px) rotate(-16deg);
+    }
+    100% {
+        transform: translate(0px, 0) rotate(-12deg);
+    }
+}
+@keyframes float-up-down-b {
+    0% {
+        transform: translate(0px, 0) rotate(7deg);
+    }
+    50% {
+        transform: translate(20px, 0px) rotate(4deg);
+    }
+    100% {
+        transform: translate(0px, 0) rotate(7deg);
+    }
+}
+
+.title-plate{
+    /* four corner dots using radial-gradients */
+    background-image:
+        radial-gradient(circle at var(--plate-dot-pixels) var(--plate-dot-pixels), var(--red-color) 0 var(--plate-dot-size), transparent 2px),
+        radial-gradient(circle at calc(100% - var(--plate-dot-pixels)) var(--plate-dot-pixels), var(--red-color) 0 var(--plate-dot-size), transparent 2px),
+        radial-gradient(circle at var(--plate-dot-pixels) calc(100% - var(--plate-dot-pixels)), var(--red-color) 0 var(--plate-dot-size), transparent 2px),
+        radial-gradient(circle at calc(100% - var(--plate-dot-pixels)) calc(100% - var(--plate-dot-pixels)), var(--red-color) 0 var(--plate-dot-size), transparent 2px);
+    background-repeat: no-repeat;
 }
