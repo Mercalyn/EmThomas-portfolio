@@ -1,8 +1,8 @@
 a{
-    color: white !important;
+    color: white;
 }
 a:hover{
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 /* this is needed just for the Empire Signshop, and advisory font */

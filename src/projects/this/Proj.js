@@ -6,7 +6,7 @@ import {
     Col,
 } from 'react-bootstrap';
 import './main.css';
-import EImg from './faviconlg.png';
+import EImg from './faviconlg2.png';
 
 function Projects() {
     return (
@@ -18,14 +18,13 @@ function Projects() {
                 <Col className="">
                     <p>
                         This site was programmed using <span className="emphasis-proj">REACT </span>
-                        (hooks) for the functionality and quick loading times, 
-                        <span className="emphasis-proj"> BOOTSTRAP</span> for the responsive layout, 
-                        <span className="emphasis-proj"> SVG + CSS ANIMATIONS</span> for the animated spaceship and background, and
-                        <span className="emphasis-proj"> FONTAWESOME + GOOGLE FONTS</span> for the custom fonts and icons.
+                        for the functionality and quick loading times, and
+                        <span className="emphasis-proj"> BOOTSTRAP</span> for the responsive layout. 
+                        <span className="emphasis-proj"> PHOTOSHOP </span> was utilized for the spaceship and all images.
                     </p>
-                    <p className="green-text">
-                        Please view my projects in the left-hand panel!
-                    </p>    
+                    <p>
+                        The website hosts as much interactivity as could be delivered on a strict time budget of 2 weeks. Please enjoy your space coffee while you peruse my projects!
+                    </p>
                 </Col>
             </Row>
         </Container>
