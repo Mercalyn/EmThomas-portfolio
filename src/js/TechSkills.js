@@ -10,6 +10,8 @@ import {
     faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
 import '../css/app.css';
+import TitlePlate from './TitlePlate.js';
+
 
 function Contact() {
     const techArray = [{

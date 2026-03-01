@@ -8,15 +8,14 @@ import {
 } from 'react-bootstrap';
 import Contact from './Contact.js';
 import TechSkills from './TechSkills.js';
-import Employer from './Employer.js';
-import RandomFacts from './RandomFacts.js';
+import Status from './Status.js';
+import PersonalHobbies from './PersonalHobbies.js';
 import PageInfo from './PageInfo.js';
-//import SVGSpaceship from './SVGSpaceship.js';
-//import Projects from '';
 
 
 // lazy imports
-const Projects = lazy(() => import('./Projects.js'));
+const WebProjects = lazy(() => import('./WebProjects.js'));
+const EngProjects = lazy(() => import('./EngProjects.js'));
 const Intro = lazy(() => import('./Intro.js'));
 const SVGSpaceship = lazy(() => import('./SVGSpaceship.js'));
 
@@ -33,24 +32,31 @@ const renderLoader = (
 function App(){
     return(
         <Container fluid>
-            <Row className="d-flex flex-row justify-content-left">
-                <Col className="d-none d-md-flex" xs={0} md={3}>
+            <Row>
+                <Col className="d-flex" xs={12} md={3}>
                     <Suspense fallback={renderLoader}>
                         <SVGSpaceship />
                     </Suspense>
                 </Col>
+                
+            </Row>
+            <Row className="d-flex flex-row justify-content-center">
                 <Col className="p-0 m-0 d-flex flex-column justify-content-between" xs={12} md={9} id="main-content">
                     <Suspense fallback={renderLoader}>
                         <Intro />
                     </Suspense>
                     <Contact />
+                    
                     <Suspense fallback={renderLoader}>
-                        <Projects />
+                        <WebProjects />
                     </Suspense>
-                    <TechSkills />
-                    <Employer />
+                    <Suspense fallback={renderLoader}>
+                        <EngProjects />
+                    </Suspense>
+                    
+                    <Status />
                     <Contact />
-                    <RandomFacts />
+                    <PersonalHobbies />
                     <PageInfo />
                 </Col>
             </Row>
